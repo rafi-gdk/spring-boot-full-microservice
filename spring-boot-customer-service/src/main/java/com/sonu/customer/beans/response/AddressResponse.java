@@ -1,5 +1,6 @@
 package com.sonu.customer.beans.response;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,10 +16,11 @@ public class AddressResponse {
     private String addressType;
     private String flatNumber;
     private String plotNumber;
-    private Long buildingName;
-    private LocalDate roadNumber;
+    private String buildingName;
+    private Integer roadNumber;
     private String street;
     private String city;
     private String country;
     private String pinCode;
+    private String customerId;
 }

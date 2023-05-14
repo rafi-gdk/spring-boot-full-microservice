@@ -5,7 +5,7 @@ metadata:
   labels:
     app: productlabel
 spec:
-  replicas: 3 # Number of replicas that will be created for this deployment
+  replicas: 1 # Number of replicas that will be created for this deployment
   selector:
     matchLabels:
       app: productlabel

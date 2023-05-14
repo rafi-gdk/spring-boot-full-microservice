@@ -1,7 +1,5 @@
-package com.sonu.customer.beans.response;
+package com.sonu.order.beans.entity;
 
-
-import com.sonu.customer.beans.request.AddressRequest;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +10,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerResponse {
+public class Customer {
 
     private String customerId;
     private String customerName;
@@ -20,5 +18,5 @@ public class CustomerResponse {
     private String phoneNumber;
     private String email;
     private String password;
-    private List<AddressResponse> addresses;
+    private List<Address> addresses;
 }

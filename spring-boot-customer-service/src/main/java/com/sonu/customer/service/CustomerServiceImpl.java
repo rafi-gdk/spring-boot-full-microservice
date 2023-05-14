@@ -66,6 +66,7 @@ public class CustomerServiceImpl implements CustomerService {
             if (optionalCustomer.isPresent()) {
                 throw new CustomerDataException("Customer Already Exist");
             } else {
+                customerRequest.getAddresses().forEach(s -> s.setCustomerId(customerRequest.getCustomerId()));
                 Customer customer = repository.save(customerUtil.buildCustomerRequest(customerRequest));
                 if (customer != null) {
                     customerResponse = customerUtil.buildCustomerResponse(customer);
